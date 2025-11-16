@@ -20,14 +20,14 @@
 **Project Goal:** Master Crew AI's multi-agent orchestration architecture and execution principles through in-depth source code analysis.
 
 **Learning Outline (Teaching Schema):**
-* [X] **Module 1:** Execution Strategy Enum - `Process` ✅ **COMPLETED** (File: `src/crewai/process.py` | 11 lines | Difficulty: ★☆☆☆☆ | Time: 5min)
-* [ ] **Module 2:** LLM Abstract Contract - `BaseLLM` (File: `src/crewai/llms/base_llm.py` | 18.5KB | Difficulty: ★★★★☆ | Time: 45min)
-* [ ] **Module 3:** Tool Abstract Contract - `BaseTool` (File: `src/crewai/tools/base_tool.py` | ~150 lines | Difficulty: ★★★☆☆ | Time: 20min)
-* [ ] **Module 4:** Agent Abstract Interface - `BaseAgent` (File: `src/crewai/agents/agent_builder/base_agent.py` | 18KB | Difficulty: ★★★★☆ | Time: 60min)
-* [ ] **Module 5:** Work Unit Definition - `Task` (File: `src/crewai/task.py` | 956 lines | Difficulty: ★★★★☆ | Time: 90min)
-* [ ] **Module 6:** Agent Concrete Implementation - `Agent` (File: `src/crewai/agent/core.py` | 57KB | Difficulty: ★★★★★ | Time: 90min)
-* [ ] **Module 7:** Agent Execution Engine - `CrewAgentExecutor` (File: `src/crewai/agents/crew_agent_executor.py` | 20KB | Difficulty: ★★★★☆ | Time: 75min)
-* [ ] **Module 8:** Multi-Agent Orchestrator - `Crew` (File: `src/crewai/crew.py` | 1687 lines | Difficulty: ★★★★★ | Time: 120min)
+* [X] **Module 1:** Execution Strategy Enum - `Process` ✅ **COMPLETED** (File: `src/crewai/process.py` | 11 lines | Difficulty: ★☆☆☆☆ | 5min)
+* [X] **Module 2:** LLM Abstract Contract - `BaseLLM` ✅ **COMPLETED** (File: `src/crewai/llms/base_llm.py` | 551 lines | Difficulty: ★★★★☆ | 45min)
+* [ ] **Module 3:** Tool Abstract Contract - `BaseTool` (File: `src/crewai/tools/base_tool.py` | ~150 lines | Difficulty: ★★★☆☆ | 20min)
+* [ ] **Module 4:** Agent Abstract Interface - `BaseAgent` (File: `src/crewai/agents/agent_builder/base_agent.py` | 18KB | Difficulty: ★★★★☆ | 60min)
+* [ ] **Module 5:** Work Unit Definition - `Task` (File: `src/crewai/task.py` | 956 lines | Difficulty: ★★★★☆ | 90min)
+* [ ] **Module 6:** Agent Concrete Implementation - `Agent` (File: `src/crewai/agent/core.py` | 57KB | Difficulty: ★★★★★ | 90min)
+* [ ] **Module 7:** Agent Execution Engine - `CrewAgentExecutor` (File: `src/crewai/agents/crew_agent_executor.py` | 20KB | Difficulty: ★★★★☆ | 75min)
+* [ ] **Module 8:** Multi-Agent Orchestrator - `Crew` (File: `src/crewai/crew.py` | 1687 lines | Difficulty: ★★★★★ | 120min)
 
 **Architecture Overview:**
 ```
@@ -57,15 +57,16 @@
           │ BaseLLM│ │ BaseTool│
           │(Mod 2) │ │ (Mod 3) │
           └────────┘ └─────────┘
-           👉 Next
+           ✅ Mastered 👉 Next
 ```
 
 **Current Status:**
 * **Completed Modules:**
-    * ✅ **Module 1: Process (Execution Strategy Enum)** - Fully understood strategy pattern, enum design, Sequential vs Hierarchical execution flow
+    * ✅ **Module 1: Process (Execution Strategy Enum)** - Strategy Pattern, Sequential vs Hierarchical
+    * ✅ **Module 2: BaseLLM (LLM Abstract Contract)** - Abstract Factory, Event-Driven, Function Calling, Token Tracking
 * **Next Action:**
-    * **[In Progress] → Module 2: LLM Abstract Contract - `BaseLLM`**
-      - File Path: `/home/user/crewAI/lib/crewai/src/crewai/llms/base_llm.py`
+    * **[In Progress] → Module 3: Tool Abstract Contract - `BaseTool`**
+      - File Path: `/home/user/crewAI/lib/crewai/src/crewai/tools/base_tool.py`
       - *Please AI, begin in-depth teaching of this module.*
 
 ---
@@ -78,8 +79,8 @@
 * **Estimated Total Learning Time:** 8-10 hours (deep understanding)
 * **Learning State Creation Time:** 2025-11-16
 * **Current Git Branch:** `claude/crewai-cognitive-learning-01RSxft4uGxzGbuMaZbZLqNA`
-* **Completed Modules:** 1/8
-* **Overall Progress:** 12.5%
+* **Completed Modules:** 2/8
+* **Overall Progress:** 25%
 
 ---
 
@@ -87,8 +88,8 @@
 
 **Core File Absolute Paths:**
 1. ✅ `/home/user/crewAI/lib/crewai/src/crewai/process.py`
-2. 👉 `/home/user/crewAI/lib/crewai/src/crewai/llms/base_llm.py`
-3. `/home/user/crewAI/lib/crewai/src/crewai/tools/base_tool.py`
+2. ✅ `/home/user/crewAI/lib/crewai/src/crewai/llms/base_llm.py`
+3. 👉 `/home/user/crewAI/lib/crewai/src/crewai/tools/base_tool.py`
 4. `/home/user/crewAI/lib/crewai/src/crewai/agents/agent_builder/base_agent.py`
 5. `/home/user/crewAI/lib/crewai/src/crewai/task.py`
 6. `/home/user/crewAI/lib/crewai/src/crewai/agent/core.py`
@@ -97,9 +98,9 @@
 
 **Key Design Patterns:**
 - **Strategy Pattern:** `Process` enum (Sequential vs Hierarchical) ✅
-- **Abstract Factory:** `BaseLLM`, `BaseAgent`, `BaseTool`
+- **Abstract Factory:** `BaseLLM` ✅, `BaseAgent`, `BaseTool`
 - **Dependency Injection:** Crew ← Agents ← Tools/LLM
-- **Event-Driven:** Event Bus throughout execution flow
+- **Event-Driven:** Event Bus throughout execution flow ✅
 - **Composite Pattern:** Crew contains Agents and Tasks
 
 **Execution Flow Overview:**
@@ -114,7 +115,9 @@ Each Task calls agent.execute_task()
     ↓
 CrewAgentExecutor starts reasoning loop
     ↓
-LLM generates tool calls → execute tools → return results 👈 Module 2 will dive deep here
+LLM generates tool calls ✅ Understood
+    ↓
+Execute tools → return results 👈 Module 3 will dive deep here
     ↓
 Aggregate into CrewOutput
 ```
@@ -143,25 +146,34 @@ Aggregate into CrewOutput
 | Date | Module | Status | Notes |
 |------|--------|--------|-------|
 | 2025-11-16 | Initialization | ✅ Done | Architecture analysis complete, learning path planned |
-| 2025-11-16 | Module 1: Process | ✅ Done | Mastered strategy pattern, Sequential vs Hierarchical, design philosophy |
-| - | Module 2: BaseLLM | ⏳ Pending | - |
+| 2025-11-16 | Module 1: Process | ✅ Done | Strategy Pattern, Sequential vs Hierarchical |
+| 2025-11-16 | Module 2: BaseLLM | ✅ Done | Abstract Factory, Event System, Function Calling |
+| - | Module 3: BaseTool | ⏳ Pending | - |
 
 ---
 
 ## 7. KNOWLEDGE_CHECKPOINTS (Knowledge Checkpoints)
 
 **Module 1 Completion Criteria:**
-- [X] Can explain Process enum's core "contract" or "responsibility" in own words
+- [X] Can explain Process enum's core "contract" in own words
 - [X] Can draw dependency diagram between Process, Crew, and Task
 - [X] Can answer all "knowledge retrieval challenge" questions
-- [X] Can predict impact of modifying Process on the system
 - [X] Understand why default is Sequential instead of Hierarchical
 
+**Module 2 Completion Criteria:**
+- [X] Can explain why call() is the only abstract method
+- [X] Can draw BaseLLM inheritance diagram
+- [X] Can name 4 event types in the event system
+- [X] Can explain complete _handle_tool_execution flow
+- [X] Can explain stop words purpose
+- [X] Can explain why token tracking is provider-agnostic
+- [X] Understand benefits of event-driven architecture
+
 **Full Course Completion Criteria:**
-- [ ] Can trace complete execution flow from `crew.kickoff()` to LLM call
+- [ ] Can trace complete execution flow from `crew.kickoff()` to LLM call (partially completed)
 - [ ] Can independently design a custom Agent or Tool
 - [ ] Can explain difference between Sequential and Hierarchical execution modes ✅
-- [ ] Can identify and name at least 3 design patterns in Crew AI (currently identified: Strategy Pattern)
+- [ ] Can identify and name at least 3 design patterns in Crew AI ✅ (identified: Strategy, Abstract Factory, Observer)
 
 ---
 
@@ -169,29 +181,62 @@ Aggregate into CrewOutput
 
 **Mastered Concepts:**
 ```
-Process (Execution Strategy)
-├── Sequential (Sequential Execution) ✅
-│   ├── Characteristics: Tasks execute in order, previous output becomes next context
-│   ├── Preconditions: Each Task must have an agent
-│   └── Use Cases: Simple workflows, cost-sensitive, beginner-friendly
+Process (Execution Strategy) ✅
+├── Sequential (Sequential Execution)
+│   ├── Characteristics: Tasks execute in order
+│   └── Use Cases: Simple workflows, cost-sensitive
 │
-├── Hierarchical (Hierarchical Execution) ✅
-│   ├── Characteristics: Manager Agent coordinates other Agents
-│   ├── Preconditions: Must provide manager_llm or manager_agent
-│   └── Use Cases: Complex collaboration, dynamic task assignment
+├── Hierarchical (Hierarchical Execution)
+│   ├── Characteristics: Manager Agent coordinates
+│   └── Requires: Function Calling support
 │
-└── Design Pattern: Strategy Pattern ✅
-    └── Benefits: Pluggable, extensible, type-safe
+└── Design Pattern: Strategy Pattern
+
+BaseLLM (LLM Abstract Contract) ✅
+├── Single abstract method: call()
+├── Event System
+│   ├── LLMCallStartedEvent
+│   ├── LLMCallCompletedEvent
+│   ├── LLMCallFailedEvent
+│   └── LLMStreamChunkEvent
+│
+├── Tool Execution: _handle_tool_execution()
+│   ├── ToolUsageStartedEvent
+│   ├── ToolUsageFinishedEvent
+│   └── ToolUsageErrorEvent
+│
+├── Stop Words: _apply_stop_words()
+├── Token Tracking: _track_token_usage_internal()
+└── Structured Output: _validate_structured_output()
+
+Design Patterns ✅
+├── Abstract Factory: BaseLLM → OpenAI/Claude/etc.
+├── Observer Pattern: Event-Driven Architecture
+├── Strategy Pattern: Process Enum
+└── Template Method: _handle_tool_execution
 ```
 
 **Concepts to Learn:**
 ```
-BaseLLM (Module 2)
-├── Abstract methods
-├── Event system
-└── Function Calling support 👈 Why important?
+BaseTool (Module 3) 👈 Next
+├── Tool abstract interface
+├── args_schema (Pydantic)
+└── Relationship with Function Calling
 ```
 
 ---
 
-**[AI Execution Instruction]:** Now, immediately begin in-depth teaching of "Module 2".
+## 9. DOCUMENT_INDEX (Document Index)
+
+**Teaching Documents:**
+- ✅ `docs/Module_01_Process.md` (pending creation)
+- ✅ `docs/Module_02_BaseLLM.md`
+- ⏳ `docs/Module_03_BaseTool.md`
+
+**State Files:**
+- `PROJECT_COGNITIVE_STATE.md` (Chinese version)
+- `PROJECT_COGNITIVE_STATE_EN.md` (this file - English version)
+
+---
+
+**[AI Execution Instruction]:** Now, immediately begin in-depth teaching of "Module 3".
