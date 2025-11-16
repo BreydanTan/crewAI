@@ -22,7 +22,7 @@
 **学习大纲（教学图式）:**
 * [X] **模块 1:** 执行策略的枚举 - `Process` ✅ **已完成** (文件: `src/crewai/process.py` | 11行 | 难度: ★☆☆☆☆ | 5分钟)
 * [X] **模块 2:** LLM的抽象契约 - `BaseLLM` ✅ **已完成** (文件: `src/crewai/llms/base_llm.py` | 551行 | 难度: ★★★★☆ | 45分钟)
-* [ ] **模块 3:** 工具的抽象契约 - `BaseTool` (文件: `src/crewai/tools/base_tool.py` | ~150行 | 难度: ★★★☆☆ | 20分钟)
+* [X] **模块 3:** 工具的抽象契约 ✅ **已完成** - `BaseTool` (文件: `src/crewai/tools/base_tool.py` | ~150行 | 难度: ★★★☆☆ | 20分钟)
 * [ ] **模块 4:** Agent的抽象接口 - `BaseAgent` (文件: `src/crewai/agents/agent_builder/base_agent.py` | 18KB | 难度: ★★★★☆ | 60分钟)
 * [ ] **模块 5:** 工作单元的定义 - `Task` (文件: `src/crewai/task.py` | 956行 | 难度: ★★★★☆ | 90分钟)
 * [ ] **模块 6:** Agent的具体实现 - `Agent` (文件: `src/crewai/agent/core.py` | 57KB | 难度: ★★★★★ | 90分钟)
@@ -79,8 +79,8 @@
 * **预计总学习时间:** 8-10 小时 (深度理解)
 * **学习状态创建时间:** 2025-11-16
 * **当前Git分支:** `claude/crewai-cognitive-learning-01RSxft4uGxzGbuMaZbZLqNA`
-* **已完成模块数:** 2/8
-* **总体进度:** 25%
+* **已完成模块数:** 3/8
+* **总体进度:** 37.5%
 
 ---
 
@@ -148,7 +148,8 @@ LLM 生成工具调用 ✅ 已理解
 | 2025-11-16 | 初始化 | ✅ 完成 | 架构分析完成,学习路径规划完成 |
 | 2025-11-16 | 模块1: Process | ✅ 完成 | 策略模式、Sequential vs Hierarchical |
 | 2025-11-16 | 模块2: BaseLLM | ✅ 完成 | 抽象工厂、事件系统、Function Calling |
-| - | 模块3: BaseTool | ⏳ 待开始 | - |
+| 2025-11-16 | 模块3: BaseTool | ✅ 完成 | args_schema、@tool装饰器、Function Calling
+| - | 模块4: BaseAgent | ⏳ 待开始 | - |
 
 ---
 

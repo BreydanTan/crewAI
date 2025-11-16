@@ -22,7 +22,7 @@
 **Learning Outline (Teaching Schema):**
 * [X] **Module 1:** Execution Strategy Enum - `Process` ✅ **COMPLETED** (File: `src/crewai/process.py` | 11 lines | Difficulty: ★☆☆☆☆ | 5min)
 * [X] **Module 2:** LLM Abstract Contract - `BaseLLM` ✅ **COMPLETED** (File: `src/crewai/llms/base_llm.py` | 551 lines | Difficulty: ★★★★☆ | 45min)
-* [ ] **Module 3:** Tool Abstract Contract - `BaseTool` (File: `src/crewai/tools/base_tool.py` | ~150 lines | Difficulty: ★★★☆☆ | 20min)
+* [X] **Module 3:** Tool Abstract Contract ✅ **COMPLETED** - `BaseTool` (File: `src/crewai/tools/base_tool.py` | ~150 lines | Difficulty: ★★★☆☆ | 20min)
 * [ ] **Module 4:** Agent Abstract Interface - `BaseAgent` (File: `src/crewai/agents/agent_builder/base_agent.py` | 18KB | Difficulty: ★★★★☆ | 60min)
 * [ ] **Module 5:** Work Unit Definition - `Task` (File: `src/crewai/task.py` | 956 lines | Difficulty: ★★★★☆ | 90min)
 * [ ] **Module 6:** Agent Concrete Implementation - `Agent` (File: `src/crewai/agent/core.py` | 57KB | Difficulty: ★★★★★ | 90min)
@@ -79,8 +79,8 @@
 * **Estimated Total Learning Time:** 8-10 hours (deep understanding)
 * **Learning State Creation Time:** 2025-11-16
 * **Current Git Branch:** `claude/crewai-cognitive-learning-01RSxft4uGxzGbuMaZbZLqNA`
-* **Completed Modules:** 2/8
-* **Overall Progress:** 25%
+* **Completed Modules:** 3/8
+* **Overall Progress:** 37.5%
 
 ---
 
@@ -148,7 +148,8 @@ Aggregate into CrewOutput
 | 2025-11-16 | Initialization | ✅ Done | Architecture analysis complete, learning path planned |
 | 2025-11-16 | Module 1: Process | ✅ Done | Strategy Pattern, Sequential vs Hierarchical |
 | 2025-11-16 | Module 2: BaseLLM | ✅ Done | Abstract Factory, Event System, Function Calling |
-| - | Module 3: BaseTool | ⏳ Pending | - |
+| 2025-11-16 | Module 3: BaseTool | ✅ Done | args_schema, @tool decorator, Function Calling
+| - | Module 4: BaseAgent | ⏳ Pending | - |
 
 ---
 
